@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,3521</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>793,2363</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Component_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -98,10 +98,9 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.Data.Entity</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description:&#xA;&#xA;Incoming argument: " DisplayName="Excel_SplitFile" sap:VirtualizedContainerService.HintSize="803,3456" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description:&#xA;&#xA;Incoming argument: " DisplayName="Excel_SplitFile" sap:VirtualizedContainerService.HintSize="803,2298" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Excel_SplitFile" Name="strComponentName" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtDumpReport" />
@@ -115,7 +114,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="741,3288" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="741,2130" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -123,7 +122,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Excel_SplitFile Component" sap:VirtualizedContainerService.HintSize="703,3060" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Excel_SplitFile Component" sap:VirtualizedContainerService.HintSize="703,1902" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -156,30 +155,47 @@
               </If.Else>
             </If>
           </Sequence>
-          <Sequence sap2010:Annotation.AnnotationText="Perform The Necessary Functionality" DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="641,1786" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="Perform The Necessary Functionality" DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="641,628" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_DOUBLE" DisplayName="Click - Yes" sap:VirtualizedContainerService.HintSize="546,87" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='Information' idx='*' /&gt;&lt;sap id='tbar[0]/btn[0]' tooltip='Continue   (Enter)' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtDumpReport]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="546,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="[in_StrDumpReportLocation]" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_DOUBLE" DisplayName="Click - Yes" sap:VirtualizedContainerService.HintSize="388,87" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='Information' idx='*' /&gt;&lt;sap id='tbar[0]/btn[0]' tooltip='Continue   (Enter)' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                    </ui:Click.Target>
+                  </ui:Click>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtDumpReport]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="[in_StrDumpReportLocation]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,414" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
@@ -206,7 +222,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Assign sap:VirtualizedContainerService.HintSize="546,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[out_IntDtTake3000]</OutArgument>
               </Assign.To>
@@ -214,190 +230,207 @@
                 <InArgument x:TypeArguments="x:Int32">[dtDumpReport.RowCount]</InArgument>
               </Assign.Value>
             </Assign>
-            <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="546,1175" sap2010:WorkflowViewState.IdRef="SequenceX_4">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="484,1064" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ReadFormatting="DisplayValue" ResizeWindow="None" WorkbookPath="[in_StrDumpReportLocation]">
-                <ueab:ExcelApplicationCard.Body>
-                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                    <ActivityAction.Argument>
-                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                    </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,797" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                      <Sequence.Variables>
-                        <Variable x:TypeArguments="sd:DataTable" Name="filtered_S232" />
-                        <Variable x:TypeArguments="x:String" Name="string_filterS232" />
-                        <Variable x:TypeArguments="x:Boolean" Name="ENEditing" />
-                      </Sequence.Variables>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                        <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,201" sap2010:WorkflowViewState.IdRef="Sequence_17">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="DeleteSheetX_3" Sheet="[Excel.Sheet(&quot;Sheet1&quot;)]" />
-                          </Sequence>
-                        </ui:CommentOut.Body>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:CommentOut>
-                      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Delay_9" />
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-                        <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,249" sap2010:WorkflowViewState.IdRef="Sequence_18">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ueab:RenameSheetX DisplayName="Rename Sheet" From="[Excel.Sheet(&quot;Sheet2&quot;)]" sap:VirtualizedContainerService.HintSize="434,138" sap2010:WorkflowViewState.IdRef="RenameSheetX_3" To="Sheet1">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ueab:RenameSheetX>
-                          </Sequence>
-                        </ui:CommentOut.Body>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:CommentOut>
-                      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey - Select All" EmptyField="False" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="s" KeyModifiers="Ctrl">
-                        <ui:SendHotkey.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0d8618c0-ef08-4e75-a62e-5f950b53df11" Selector="&lt;wnd app='excel.exe' cls='*' title='*Excel' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
-                        </ui:SendHotkey.Target>
-                      </ui:SendHotkey>
-                      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Delay_10" />
-                      <uix:NCheckState DisplayName="Check App State 'Add sensitivity label'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" InScope="[Excel]" ScopeIdentifier="Excel" Timeout="10" Version="V3">
-                        <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1060" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,192" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="SequenceX_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="484,1064" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ReadFormatting="DisplayValue" ResizeWindow="None" WorkbookPath="[in_StrDumpReportLocation]">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,797" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Name="filtered_S232" />
+                              <Variable x:TypeArguments="x:String" Name="string_filterS232" />
+                              <Variable x:TypeArguments="x:Boolean" Name="ENEditing" />
+                            </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select label'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable DesignTimeRectangle="568, 77, 93, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Select label'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUISimpleButton' name='Select label' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUISimpleButton' name='Select label' role='Button' automationid='' check:fulltext='Select label' /&gt;" Guid="7de5e947-297b-40ad-9e24-6742fbeddd4e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAaCAYAAACn4zKhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGhSURBVGhD7ZbBjYQwDEW3OJqYKiiCJuiBE5e50waN7GUlVm/Fn7WyCWQHAjn4SdaE2CS2f4jm4+vzubjday5CBfYSYRxHt4stKoJzHS5CBbgIFeAiVICLUAEuQgUUE2EYhqVpmpftQcw8z+vTeeSs+87eZ+ZbRASSs0nyO03TzzjFkaK23s1Z9529j+QbUkQEGv54PNanPFyEk0UAkuy6bn36hcTxYVYoW1QqBniWD7E1xmL7Ma9127aNxvJsr8++71dPXr5HKSYCqGH2KmJOyVO4mmGLSsXQxL1Gh6R8dp4xawNzObls7flfiooAOq38hicXU/GMKSoVo+bEYD7VEOsL/yzocITvsx+xOfmeQXERgM+bE0RR9pO2qKhUDD5iYmw1RL7wffbIEWEv3zMoIoIKEBSle5bk8YfYolIxNMTe14J4u59F6+LXKWZs32GsdeXby8XGHKXYl0DDSBRT8aAiZbE7NhUDdl5NxB/GCea1rnIin/BL0BqYbXpOvkcpJoKTj4tQAS5CBbgIFeAiVEBSBLdr7Y8IbveZi3C7PZdvcKJn0t7b370AAAAASUVORK5CYII=" InformativeScreenshot="0ef54cc2a0e17d7dca023fa909693aa2.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,201" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="DeleteSheetX_3" Sheet="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,249" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:RenameSheetX DisplayName="Rename Sheet" From="[Excel.Sheet(&quot;Sheet2&quot;)]" sap:VirtualizedContainerService.HintSize="434,138" sap2010:WorkflowViewState.IdRef="RenameSheetX_3" To="Sheet1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ueab:RenameSheetX>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                            <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey - Select All" EmptyField="False" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="s" KeyModifiers="Ctrl">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0d8618c0-ef08-4e75-a62e-5f950b53df11" Selector="&lt;wnd app='excel.exe' cls='*' title='*Excel' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                            <uix:NCheckState DisplayName="Check App State 'Add sensitivity label'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" InScope="[Excel]" ScopeIdentifier="Excel" Timeout="10" Version="V3">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1060" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select label'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="568, 77, 93, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Select label'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUISimpleButton' name='Select label' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUISimpleButton' name='Select label' role='Button' automationid='' check:fulltext='Select label' /&gt;" Guid="7de5e947-297b-40ad-9e24-6742fbeddd4e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAaCAYAAACn4zKhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGhSURBVGhD7ZbBjYQwDEW3OJqYKiiCJuiBE5e50waN7GUlVm/Fn7WyCWQHAjn4SdaE2CS2f4jm4+vzubjday5CBfYSYRxHt4stKoJzHS5CBbgIFeAiVICLUAEuQgUUE2EYhqVpmpftQcw8z+vTeeSs+87eZ+ZbRASSs0nyO03TzzjFkaK23s1Z9529j+QbUkQEGv54PNanPFyEk0UAkuy6bn36hcTxYVYoW1QqBniWD7E1xmL7Ma9127aNxvJsr8++71dPXr5HKSYCqGH2KmJOyVO4mmGLSsXQxL1Gh6R8dp4xawNzObls7flfiooAOq38hicXU/GMKSoVo+bEYD7VEOsL/yzocITvsx+xOfmeQXERgM+bE0RR9pO2qKhUDD5iYmw1RL7wffbIEWEv3zMoIoIKEBSle5bk8YfYolIxNMTe14J4u59F6+LXKWZs32GsdeXby8XGHKXYl0DDSBRT8aAiZbE7NhUDdl5NxB/GCea1rnIin/BL0BqYbXpOvkcpJoKTj4tQAS5CBbgIFeAiVEBSBLdr7Y8IbveZi3C7PZdvcKJn0t7b370AAAAASUVORK5CYII=" InformativeScreenshot="0ef54cc2a0e17d7dca023fa909693aa2.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="641, 45, 54, 25" ElementType="Button" FriendlyName="'Help'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='HelpTab' cls='NetUIRibbonTab' name='Help' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='HelpTab' cls='NetUIRibbonTab' name='Help' role='Tab Item' check:fulltext='Help' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAdCAYAAAD7En+mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVFhH7ZThCcJADEYdTsQNRFxBcQMRN1DcQHSG4hDqKtUBKl8hJYY7sV56hTQ/HqTJd6Wvd+3o9SyrIeCi1nBRa7ioNVzUGr2LTifj6nG/BWeaJIvGHvRXARdVJpvoerWse+BaFMEczSgHKJdKFtHddlODGr3FfBbMoeaz42H/cZ2CimgMLsBfBnY3NJO5WO8fOt9RgFpCxxc1rec1gR0N3b8tWY5uLCNnMof629o2ZBHFUaVvVCJFkaUZ1vDrFLKIAhxB9KQMz6G+nE9NTutHBJJFNeHS2rhoHwxGtEtc1Bouag0XtUVZvQEmQYU8rxxmnwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select a label'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="30, 102, 476, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Select a label'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' role='Text' automationid='' check:fulltext='Select a label' /&gt;" Guid="2f0b38d3-3a16-4019-804c-b62d8d3132b4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeAAAAAUCAYAAABVoO4uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVHhe7dq9jdRQFAZQqpkyWKpAUMUKUQMSEiUgbUAHBCRUQEBEFySbEQ/6gju69vjNWjN4HXCCI//caz+/6Jtnz4vffx6PAMDzEsAAsAMBDAA7EMAAsAMBDAA7EMAAsINJAH/+8nA8HA4nvbYkPT9+/VysbW3N2Nc8355zAuD/cQrghE4Pn2y/fv82aZ67JaxuDbo1118zxq3PBQBrnAI4Yfvy1d1ZwyUCGACuM3kFnfC5f/9u0hAJpNSih3QPq1FP5LhqCfraj6XxXr99c7EeqdXYo/4c99fqHz59PNXWzAkAtnL2J6wKy/76OecqlBJoFXI9rEY9CcelEF0bdKO+Neezn/Gzn3O9tmZOALCVswCOWqVmO1+xRoVa9hNWo54Kvfn9+7VLtfmfwfqPgdKvH/X3nsgzpXfNnOoaANjCYgBHXtdmVZiw6q9ouwqrUU9q6Zmfj1HQza/JfS8F8KX++Rg9gJ+a01INAP6VUwBXMNVxwqq+mSaUUq9a6WE16knQ9W+vJf1LwZpztRrN/qivxr7Un/0au2pPPW/vAYCtTFbACcsEUFSoRYVXWfpeOuqpvlLhmPq8r9Rz5Bn6irZLvcYe9df9s40euGvmBABbGb6CBgC2I4ABYAcCGAB2IIABYAcCGACe3ePxL1CznC/DgE0sAAAAAElFTkSuQmCC" InformativeScreenshot="a865d205f4f1d7370ebad3c9cece408c.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Custom'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="27, 129, 44, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Custom'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Custom' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Custom' role='Text' automationid='' check:fulltext='Custom' /&gt;" Guid="344a5f93-28a0-4a17-b97d-1beb3ca04091" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAUCAYAAADLP76nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEPSURBVFhH7ZOBEYIwDEXdRZ0D51DXkDVwDN0C12CZeg/5XhorqKdWPN5djoYmaX4oszByJgG5mQTk5j8FrIoiLBfz1lj/MpGApmnapo+HQ/fm8s76z0At8j9JJGC7Wb/cbIqvCtD0+/ANWR/x+BhD0Bory10bozNkdlj4p7qO9mydfVV1kTFXASQP3XcKpQRwkJq0+Hjqq2mJ0T5rhgASopryU7zlCyjXT8nGp5qwV5Y9YoTNBe+L6B+wE0oxVBQBthG7/4iAvtreF5EAihFoJ8Fah1iBivVFEaEv4WvhK588m+9rDfkiEgAqLNO9BDWNcT95Em/fY0Ix935iL66vYe+LGwFjYxKQm0lAXkI4A0ec6uTivrwfAAAAAElFTkSuQmCC" InformativeScreenshot="c00ca1ec512b5e2b97f296d8e65607c8.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="30, 102, 476, 16" ElementType="Text" FriendlyName="'Select a label'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' role='Text' automationid='' check:fulltext='Select a label' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeAAAAAUCAYAAABVoO4uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHsSURBVHhe7do9jtNQFAZQVpMdoCloaagoKKmQ6JCo0YgVDEsYIbaANOtgTUFfcaMbx89jJXhccIoj/9xrP7/qy7Pz6tefpyMA8LIEMADsQAADwA4EMADsQAADwA4EMADs4CyAvz7cHw+Hw0mvzUnPw+/H2drW1ox9zfPtOScA/h+nAE7o9PDJ9vvPH2fNU7eE1a1Bt+b6a8a49bkAYI1TACdsX7+5u2hYIoAB4Dpnr6ATPh8+fzxriARSatFDuofVqCdyXLUEfe3H3Hhv379brEdqNfaoP8f9tfqnb19OtTVzAoCtXPwJq8Kyv37OuQqlBFqFXA+rUU/CcS5E1wbdqG/N+exn/OznXK+tmRMAbOUigKNWqdlOV6xRoZb9hNWop0Jvev9+7Vxt+mew/mOg9OtH/b0n8kzpXTOnugYAtjAbwJHXtVkVJqz6K9quwmrUk1p6pudjFHTTa3LfpQBe6p+O0QP4uTnN1QDgXzkFcAVTHSes6ptpQin1qpUeVqOeBF3/9lrSPxesOVer0eyP+mrspf7s19hVe+55ew8AbOVsBZywTABFhVpUeJW576WjnuorFY6pT/tKPUeeoa9ou9Rr7FF/3T/b6IG7Zk4AsJXhK2gAYDsCGAB2IIABYAcCGAB2IIAB4MU9Hf8CsHi8wpxqkhUAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Commercial in Confidence'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="529, 151, 144, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Commercial in Confidence'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Commercial in Confidence' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Commercial in Confidence' role='Text' automationid='' check:fulltext='Commercial in Confidence' /&gt;" Guid="6ab3bc61-6f11-48ab-a7d2-4be4d4e91b7e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVEhL7ZDRDcIwDAXZBZijzAHMgxCTlC3aNbJM0BVe5QSrLRV8IPmkKE6cXBxvbtdL/hUhdwm5S8hdXPmhafJ+tx0G8VoKeUppEN7b9rXz3LPrTyjk59NxtchjlKvqKXRGwxbCuu+6IjfKScz1l7yEeogZiPk56JHFleuCxbaRHGdEIQdbWc0SuX4Bb3IO1hUQW4Firy2TctAlDfUR6lzdhln5Nwm5S8hd/lWe8wPxpV0GUyI0OwAAAABJRU5ErkJggg==" InformativeScreenshot="54c710e710b5e0c8ab78dec088c27299.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="23, 125, 504, 24" FriendlyName="'CustomPersonal Use'" FullSelectorArgument="&lt;uia cls='NetUIAnchor' name='Custom' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIAnchor' name='Custom' role='Menu Item' automationid='' check:fulltext='Custom&amp;#xD;&amp;#xA;Personal Use&amp;#x9;&amp;#xD;&amp;#xA;Commercial in Confidence&amp;#x9;&amp;#xD;&amp;#xA;Legally Privileged and Confidential' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfwAAAAcCAYAAACEYQ0lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHlSURBVHhe7dphahQxGAZg76Ieoh7C4hmsZ1A8gJRSvIFCjyDiNUS80Mq78pVsNt2ZLfRHJ88HD00mX9L+eydMX9xcf9kBANu2D3yllFJKbbcOAv/vn98AwMYc3fBHTQDA81Y5L/ABYMMEPgBMQOADwAQEPgBMQOADwAQEPgBM4KzAf3NxsXv96uVexqMeAOBpJYdHz09ZFfi/fv7YH/719ubgWTs/R87K/tEaAHBaXb5Haw9ZFfjvLt8+OtxHBD4APF4F/jmhvxj4dbvvn7f6AG/neVmoPyovDTWOD1fv9z31O0r7cpH53fdvB2vtOZ8/fbzvBYAZVAaWUU9vMfATtkvf6/PLRoGfYK5Qb/X9Ob9CvsK/1jPOS0PGFfx1Zs0zBoBZJPvKaH3kSW/4tbe/hbf9o9BuPyFkLT211u4dzQFg65J9fXYuWQz8aG/gI0shnMDPswrudn1N4J86u58DwNb1ubnGqsBP+Obw9qadcYVy+0JQvX0IJ/Trpt+flXntz752f3/W0hwAOLYq8KOCuNR39aiQj3xfz8/0t8+j+qvnoX/a618GTgV8PwcAjq0OfADg+RL4ADABgQ8AExD4ADABgQ8AExD4ADABgQ8AEzgKfKWUUkptrwS+UkopNUH9z/nd7h8EzGbiizMAGwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="8" DisplayName="Click 'Apply'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="380, 143, 70, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Apply'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='Apply' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='Apply' role='Button' automationid='' check:fulltext='Apply' /&gt;" Guid="991dacce-a343-4372-84cb-20c1e6338ff4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAcCAYAAADGBymbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVGhD7ZXRDYMwDEQ7DWMwBmMwBSPwwxRMwSqskeoiGR1pWgw1URvZ0hMhRpR7TeARvFTlopS1iRrH0ckgtRO1rqtDuCglLkqJi1LiopS4KCUuSklRUV3XRXK9KzRNE5ZlyfasKSYKgdq2jViFq1LUMAw7ctecpUpRspLmeY5j7iHwNE3xCFjkUU9WKq6R+dxvfEsRUemDY4w5OUdgeXchuAjQ9DCGJH739X2/E2dBEVF4cF4JGGNOzjk8QGgJqu2lf4SMrSgiCoFycP9bUZCPecB/ihW3i8KD87YQ0sASDluSBRz1ZIwj7glkzpLbRbEQhgUiMLYijoCvP+qxFNyPt7Qlt4vSkAbW9lIgij8SllQjKv2yWlOFKKykMyvvCj8h6h9wUUpclJK3opxXpDZRXp/LRakqhCf0DNIJ7ZQnMQAAAABJRU5ErkJggg==" InformativeScreenshot="7cc5f3560df0bf57193d44cd00ba7f27.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="459, 143, 70, 24" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' role='Button' automationid='' check:fulltext='Cancel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAcCAYAAADGBymbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE0SURBVGhD7ZTRjYMwEAWvGspIGZRBFZTAD1VQBa3QBqeJ9NDiM6fNnYggeiuN4rUXiIfFX6sjFRaVjE3UMAymgmInalkWE7CoJBaVxKKSWFQSi0piUUneIurxeKxN0zxhXKs5C545z3N17RVOFcUf5I+O47ibi/nZ3EJU27ZvlVLj8qLUTbU1gUhqoOu6bZ4cwVrr+353XfyUp2l6zul5ED9v8kuLYgOvnEdxQ4yRyJj7kKuO+ShV8Cxdj2TVXF6U3nBtTcSuAXVHuTnlR/eUzIhEM760KOAtH51R5aap/Y+oo+69hSh1jAQAY+b5LT8v1ZWbizlCyjNLNbWXUt7rr5wqCtQFQnKATWsu01ExF7pGssVtzqhPw6KSWFQSi0piUUksKsmhKPMTxSbK8XtYVCrW9RtBE9l0vvh1CwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="48, 74, 137, 28" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Add sensitivity label'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUILabel' name='Add sensitivity label' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUILabel' name='Add sensitivity label' role='Text' automationid='' check:fulltext='Add sensitivity label' /&gt;" Guid="71b7de93-c6b2-4dde-b85b-cfd458fdc82d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI0AAAAgCAYAAAAv3PuVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALoSURBVHhe7ZwxilVBEEX/4v4GzDRxAYKmpqJgbCCYmomRmZHgDkTEwBX8LZgIT+7AHc6v3/1e18Q3OEx3VfWtelWlk83p188fWwgdTl/enrYQOpz+/f26hdAhSxPaZGlCmyxNaJOlCW2yNKFNlia0ydKENlma0CZLE9oMl+Z8Pt9R7U8eP7r3me/f3rVjyJ/fH69i9d4+2sXnT2+u7I4T8tG2p/vi+dM7fGacod9nafhMGFPPM21psSbx+tWzG5uQ7cP7lzd2Y92Z3XAO1efeHuUSN0sjYX/QaCEoKL8S0rYSYzxYFywYV320V00uzZEuB2tcp97SzljnqDHMtaptm37aRh2yN0i9n82Lenqv+8hH9nKZm6XRthP6RoK1kSsxZtRMMvsw2VUb3zqHzke6q4MVjJVPMayJeWu82dN2j6Wj3tFv9gbJWVnLsFbXMPKRBy2NxJSgJhEjQTdS8asxRPaah77Rh9nOAelOnT3d7mAZ272LmTZrVt9G32rfbJB6L33nqD5raqFYF32kvTQS0SPf64fMBFnASkxFb+QXtNtm3HSdpcVl1F1nvp/pdgZbY2senfldHW2hGjVQ/aw+M+up8vKdzqxFOQnzz3yzXORqaVR8FeN/eSNBDm41ZoZz8s4mjOzK5WbxLam6ncGOYp1/lLOjLayxN6jZII/mpbv75Bo8A/pIe2koKpzI95Ggh9aJmVGXa/Zh1a67BsVaSdXtDHYUa5vgkOijbaYtam0jZoOs75yHfvaJOtU3iplxvzQSYEJD8SroNyx8JYY+2h3r5jI3qXa/E77v6XYGO4plvvpdHW3x0KVxDbQJ2eSrZ9fgPPSR1tKMPrbaJahkpMavxBg237B51ed/1TrXD1aNsut8pDv6Vjd1ZWmEdau9oy1Wl8b5hO6zumjnG8GeVZ97O8rlN+bq11MIK2RpQpssTWiTpQltsjShTZYmtMnShDZZmtAmSxPa5A8AhDany+WyhbDOZfsP07+aygBuRAIAAAAASUVORK5CYII=" InformativeScreenshot="4c383752be7ebad12e2ecfeb4a04f220.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
                                   <uix:TargetAnchorable.Anchors>
                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="641, 45, 54, 25" ElementType="Button" FriendlyName="'Help'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='HelpTab' cls='NetUIRibbonTab' name='Help' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='HelpTab' cls='NetUIRibbonTab' name='Help' role='Tab Item' check:fulltext='Help' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAdCAYAAAD7En+mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVFhH7ZThCcJADEYdTsQNRFxBcQMRN1DcQHSG4hDqKtUBKl8hJYY7sV56hTQ/HqTJd6Wvd+3o9SyrIeCi1nBRa7ioNVzUGr2LTifj6nG/BWeaJIvGHvRXARdVJpvoerWse+BaFMEczSgHKJdKFtHddlODGr3FfBbMoeaz42H/cZ2CimgMLsBfBnY3NJO5WO8fOt9RgFpCxxc1rec1gR0N3b8tWY5uLCNnMof629o2ZBHFUaVvVCJFkaUZ1vDrFLKIAhxB9KQMz6G+nE9NTutHBJJFNeHS2rhoHwxGtEtc1Bouag0XtUVZvQEmQYU8rxxmnwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                      <uix:Target DesignTimeRectangle="127, 45, 61, 25" ElementType="Button" FriendlyName="'Insert'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='TabInsert' cls='NetUIRibbonTab' name='Insert' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='TabInsert' cls='NetUIRibbonTab' name='Insert' role='Tab Item' check:fulltext='Insert' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEEAAAAdCAYAAAD1uwHJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEXSURBVFhH7ZRtasJAFEVdXJEuICClW6h0ByLuoNIdSLuG4CJstxK7gHhv4A6PYcyPJKaW3h+HvK/RzEkyi59z0/53LAFYArAEYAnAEoAlAEsAlgAsAUwi4XH5UKzfCv7f99ep2BuCJYDJJTD+/Dh0V8XqHes61Ynq5HX9kuqcU105r6uqSjOEa+JvDOUmEnRzklGai+y2mw7GfMLPT6vU45qYq3b3b0K8wZgzjk+5NEMosW9NPj+WWSUoJ/pM2FMtoo0zzjdcqo1hdgmx3rdRUer1zQ/h1yTwlZcExjoTcq5JKH1WQ5lNAmEs3vdvaYbw8FMvnvrMcwkUls+NYRIJfx1LAJYALAFYArAEYAnAEoAlAEs4N+0FM5qHfmdSargAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select a label'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable DesignTimeRectangle="30, 102, 476, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Select a label'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' role='Text' automationid='' check:fulltext='Select a label' /&gt;" Guid="2f0b38d3-3a16-4019-804c-b62d8d3132b4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeAAAAAUCAYAAABVoO4uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVHhe7dq9jdRQFAZQqpkyWKpAUMUKUQMSEiUgbUAHBCRUQEBEFySbEQ/6gju69vjNWjN4HXCCI//caz+/6Jtnz4vffx6PAMDzEsAAsAMBDAA7EMAAsAMBDAA7EMAAsINJAH/+8nA8HA4nvbYkPT9+/VysbW3N2Nc8355zAuD/cQrghE4Pn2y/fv82aZ67JaxuDbo1118zxq3PBQBrnAI4Yfvy1d1ZwyUCGACuM3kFnfC5f/9u0hAJpNSih3QPq1FP5LhqCfraj6XxXr99c7EeqdXYo/4c99fqHz59PNXWzAkAtnL2J6wKy/76OecqlBJoFXI9rEY9CcelEF0bdKO+Neezn/Gzn3O9tmZOALCVswCOWqVmO1+xRoVa9hNWo54Kvfn9+7VLtfmfwfqPgdKvH/X3nsgzpXfNnOoaANjCYgBHXtdmVZiw6q9ouwqrUU9q6Zmfj1HQza/JfS8F8KX++Rg9gJ+a01INAP6VUwBXMNVxwqq+mSaUUq9a6WE16knQ9W+vJf1LwZpztRrN/qivxr7Un/0au2pPPW/vAYCtTFbACcsEUFSoRYVXWfpeOuqpvlLhmPq8r9Rz5Bn6irZLvcYe9df9s40euGvmBABbGb6CBgC2I4ABYAcCGAB2IIABYAcCGACe3ePxL1CznC/DgE0sAAAAAElFTkSuQmCC" InformativeScreenshot="a865d205f4f1d7370ebad3c9cece408c.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Custom'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable DesignTimeRectangle="27, 129, 44, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Custom'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Custom' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Custom' role='Text' automationid='' check:fulltext='Custom' /&gt;" Guid="344a5f93-28a0-4a17-b97d-1beb3ca04091" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAUCAYAAADLP76nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEPSURBVFhH7ZOBEYIwDEXdRZ0D51DXkDVwDN0C12CZeg/5XhorqKdWPN5djoYmaX4oszByJgG5mQTk5j8FrIoiLBfz1lj/MpGApmnapo+HQ/fm8s76z0At8j9JJGC7Wb/cbIqvCtD0+/ANWR/x+BhD0Bory10bozNkdlj4p7qO9mydfVV1kTFXASQP3XcKpQRwkJq0+Hjqq2mJ0T5rhgASopryU7zlCyjXT8nGp5qwV5Y9YoTNBe+L6B+wE0oxVBQBthG7/4iAvtreF5EAihFoJ8Fah1iBivVFEaEv4WvhK588m+9rDfkiEgAqLNO9BDWNcT95Em/fY0Ix935iL66vYe+LGwFjYxKQm0lAXkI4A0ec6uTivrwfAAAAAElFTkSuQmCC" InformativeScreenshot="c00ca1ec512b5e2b97f296d8e65607c8.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="30, 102, 476, 16" ElementType="Text" FriendlyName="'Select a label'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Select a label' role='Text' automationid='' check:fulltext='Select a label' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeAAAAAUCAYAAABVoO4uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHsSURBVHhe7do9jtNQFAZQVpMdoCloaagoKKmQ6JCo0YgVDEsYIbaANOtgTUFfcaMbx89jJXhccIoj/9xrP7/qy7Pz6tefpyMA8LIEMADsQAADwA4EMADsQAADwA4EMADs4CyAvz7cHw+Hw0mvzUnPw+/H2drW1ox9zfPtOScA/h+nAE7o9PDJ9vvPH2fNU7eE1a1Bt+b6a8a49bkAYI1TACdsX7+5u2hYIoAB4Dpnr6ATPh8+fzxriARSatFDuofVqCdyXLUEfe3H3Hhv379brEdqNfaoP8f9tfqnb19OtTVzAoCtXPwJq8Kyv37OuQqlBFqFXA+rUU/CcS5E1wbdqG/N+exn/OznXK+tmRMAbOUigKNWqdlOV6xRoZb9hNWop0Jvev9+7Vxt+mew/mOg9OtH/b0n8kzpXTOnugYAtjAbwJHXtVkVJqz6K9quwmrUk1p6pudjFHTTa3LfpQBe6p+O0QP4uTnN1QDgXzkFcAVTHSes6ptpQin1qpUeVqOeBF3/9lrSPxesOVer0eyP+mrspf7s19hVe+55ew8AbOVsBZywTABFhVpUeJW576WjnuorFY6pT/tKPUeeoa9ou9Rr7FF/3T/b6IG7Zk4AsJXhK2gAYDsCGAB2IIABYAcCGAB2IIAB4MU9Hf8CsHi8wpxqkhUAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Commercial in Confidence'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable DesignTimeRectangle="529, 151, 144, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Commercial in Confidence'" FullSelectorArgument="&lt;uia cls='NetUILabel' name='Commercial in Confidence' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUILabel' name='Commercial in Confidence' role='Text' automationid='' check:fulltext='Commercial in Confidence' /&gt;" Guid="6ab3bc61-6f11-48ab-a7d2-4be4d4e91b7e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVEhL7ZDRDcIwDAXZBZijzAHMgxCTlC3aNbJM0BVe5QSrLRV8IPmkKE6cXBxvbtdL/hUhdwm5S8hdXPmhafJ+tx0G8VoKeUppEN7b9rXz3LPrTyjk59NxtchjlKvqKXRGwxbCuu+6IjfKScz1l7yEeogZiPk56JHFleuCxbaRHGdEIQdbWc0SuX4Bb3IO1hUQW4Firy2TctAlDfUR6lzdhln5Nwm5S8hd/lWe8wPxpV0GUyI0OwAAAABJRU5ErkJggg==" InformativeScreenshot="54c710e710b5e0c8ab78dec088c27299.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="23, 125, 504, 24" FriendlyName="'CustomPersonal Use'" FullSelectorArgument="&lt;uia cls='NetUIAnchor' name='Custom' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIAnchor' name='Custom' role='Menu Item' automationid='' check:fulltext='Custom&amp;#xD;&amp;#xA;Personal Use&amp;#x9;&amp;#xD;&amp;#xA;Commercial in Confidence&amp;#x9;&amp;#xD;&amp;#xA;Legally Privileged and Confidential' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfwAAAAcCAYAAACEYQ0lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHlSURBVHhe7dphahQxGAZg76Ieoh7C4hmsZ1A8gJRSvIFCjyDiNUS80Mq78pVsNt2ZLfRHJ88HD00mX9L+eydMX9xcf9kBANu2D3yllFJKbbcOAv/vn98AwMYc3fBHTQDA81Y5L/ABYMMEPgBMQOADwAQEPgBMQOADwAQEPgBM4KzAf3NxsXv96uVexqMeAOBpJYdHz09ZFfi/fv7YH/719ubgWTs/R87K/tEaAHBaXb5Haw9ZFfjvLt8+OtxHBD4APF4F/jmhvxj4dbvvn7f6AG/neVmoPyovDTWOD1fv9z31O0r7cpH53fdvB2vtOZ8/fbzvBYAZVAaWUU9vMfATtkvf6/PLRoGfYK5Qb/X9Ob9CvsK/1jPOS0PGFfx1Zs0zBoBZJPvKaH3kSW/4tbe/hbf9o9BuPyFkLT211u4dzQFg65J9fXYuWQz8aG/gI0shnMDPswrudn1N4J86u58DwNb1ubnGqsBP+Obw9qadcYVy+0JQvX0IJ/Trpt+flXntz752f3/W0hwAOLYq8KOCuNR39aiQj3xfz8/0t8+j+qvnoX/a618GTgV8PwcAjq0OfADg+RL4ADABgQ8AExD4ADABgQ8AExD4ADABgQ8AEzgKfKWUUkptrwS+UkopNUH9z/nd7h8EzGbiizMAGwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="8" DisplayName="Click 'Apply'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable DesignTimeRectangle="380, 143, 70, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Apply'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='Apply' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='Apply' role='Button' automationid='' check:fulltext='Apply' /&gt;" Guid="991dacce-a343-4372-84cb-20c1e6338ff4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAcCAYAAADGBymbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVGhD7ZXRDYMwDEQ7DWMwBmMwBSPwwxRMwSqskeoiGR1pWgw1URvZ0hMhRpR7TeARvFTlopS1iRrH0ckgtRO1rqtDuCglLkqJi1LiopS4KCUuSklRUV3XRXK9KzRNE5ZlyfasKSYKgdq2jViFq1LUMAw7ctecpUpRspLmeY5j7iHwNE3xCFjkUU9WKq6R+dxvfEsRUemDY4w5OUdgeXchuAjQ9DCGJH739X2/E2dBEVF4cF4JGGNOzjk8QGgJqu2lf4SMrSgiCoFycP9bUZCPecB/ihW3i8KD87YQ0sASDluSBRz1ZIwj7glkzpLbRbEQhgUiMLYijoCvP+qxFNyPt7Qlt4vSkAbW9lIgij8SllQjKv2yWlOFKKykMyvvCj8h6h9wUUpclJK3opxXpDZRXp/LRakqhCf0DNIJ7ZQnMQAAAABJRU5ErkJggg==" InformativeScreenshot="7cc5f3560df0bf57193d44cd00ba7f27.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Add sensitivity label' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="459, 143, 70, 24" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' role='Button' automationid='' check:fulltext='Cancel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAcCAYAAADGBymbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE0SURBVGhD7ZTRjYMwEAWvGspIGZRBFZTAD1VQBa3QBqeJ9NDiM6fNnYggeiuN4rUXiIfFX6sjFRaVjE3UMAymgmInalkWE7CoJBaVxKKSWFQSi0piUUneIurxeKxN0zxhXKs5C545z3N17RVOFcUf5I+O47ibi/nZ3EJU27ZvlVLj8qLUTbU1gUhqoOu6bZ4cwVrr+353XfyUp2l6zul5ED9v8kuLYgOvnEdxQ4yRyJj7kKuO+ShV8Cxdj2TVXF6U3nBtTcSuAXVHuTnlR/eUzIhEM760KOAtH51R5aap/Y+oo+69hSh1jAQAY+b5LT8v1ZWbizlCyjNLNbWXUt7rr5wqCtQFQnKATWsu01ExF7pGssVtzqhPw6KSWFQSi0piUUksKsmhKPMTxSbK8XtYVCrW9RtBE9l0vvh1CwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                            </uix:NClick>
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'Button  Close'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f0c614f2-1925-441d-ad29-f9845d9fdb0d" InformativeScreenshot="4c4006334e8af6efd39e9e5772039659" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIAppFrameHelper' name='Close' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
                           </Sequence>
-                        </uix:NCheckState.IfExists>
-                        <uix:NCheckState.Target>
-                          <uix:TargetAnchorable DesignTimeRectangle="48, 74, 137, 28" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Add sensitivity label'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUILabel' name='Add sensitivity label' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Business Bar toolbar' /&gt;&lt;uia cls='NetUIElement' name='Add sensitivity label' /&gt;&lt;uia cls='NetUILabel' name='Add sensitivity label' role='Text' automationid='' check:fulltext='Add sensitivity label' /&gt;" Guid="71b7de93-c6b2-4dde-b85b-cfd458fdc82d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI0AAAAgCAYAAAAv3PuVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALoSURBVHhe7ZwxilVBEEX/4v4GzDRxAYKmpqJgbCCYmomRmZHgDkTEwBX8LZgIT+7AHc6v3/1e18Q3OEx3VfWtelWlk83p188fWwgdTl/enrYQOpz+/f26hdAhSxPaZGlCmyxNaJOlCW2yNKFNlia0ydKENlma0CZLE9oMl+Z8Pt9R7U8eP7r3me/f3rVjyJ/fH69i9d4+2sXnT2+u7I4T8tG2p/vi+dM7fGacod9nafhMGFPPM21psSbx+tWzG5uQ7cP7lzd2Y92Z3XAO1efeHuUSN0sjYX/QaCEoKL8S0rYSYzxYFywYV320V00uzZEuB2tcp97SzljnqDHMtaptm37aRh2yN0i9n82Lenqv+8hH9nKZm6XRthP6RoK1kSsxZtRMMvsw2VUb3zqHzke6q4MVjJVPMayJeWu82dN2j6Wj3tFv9gbJWVnLsFbXMPKRBy2NxJSgJhEjQTdS8asxRPaah77Rh9nOAelOnT3d7mAZ272LmTZrVt9G32rfbJB6L33nqD5raqFYF32kvTQS0SPf64fMBFnASkxFb+QXtNtm3HSdpcVl1F1nvp/pdgZbY2senfldHW2hGjVQ/aw+M+up8vKdzqxFOQnzz3yzXORqaVR8FeN/eSNBDm41ZoZz8s4mjOzK5WbxLam6ncGOYp1/lLOjLayxN6jZII/mpbv75Bo8A/pIe2koKpzI95Ggh9aJmVGXa/Zh1a67BsVaSdXtDHYUa5vgkOijbaYtam0jZoOs75yHfvaJOtU3iplxvzQSYEJD8SroNyx8JYY+2h3r5jI3qXa/E77v6XYGO4plvvpdHW3x0KVxDbQJ2eSrZ9fgPPSR1tKMPrbaJahkpMavxBg237B51ed/1TrXD1aNsut8pDv6Vjd1ZWmEdau9oy1Wl8b5hO6zumjnG8GeVZ97O8rlN+bq11MIK2RpQpssTWiTpQltsjShTZYmtMnShDZZmtAmSxPa5A8AhDany+WyhbDOZfsP07+aygBuRAIAAAAASUVORK5CYII=" InformativeScreenshot="4c383752be7ebad12e2ecfeb4a04f220.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target DesignTimeRectangle="127, 45, 61, 25" ElementType="Button" FriendlyName="'Insert'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='TabInsert' cls='NetUIRibbonTab' name='Insert' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='TabInsert' cls='NetUIRibbonTab' name='Insert' role='Tab Item' check:fulltext='Insert' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEEAAAAdCAYAAAD1uwHJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEXSURBVFhH7ZRtasJAFEVdXJEuICClW6h0ByLuoNIdSLuG4CJstxK7gHhv4A6PYcyPJKaW3h+HvK/RzEkyi59z0/53LAFYArAEYAnAEoAlAEsAlgAsAUwi4XH5UKzfCv7f99ep2BuCJYDJJTD+/Dh0V8XqHes61Ynq5HX9kuqcU105r6uqSjOEa+JvDOUmEnRzklGai+y2mw7GfMLPT6vU45qYq3b3b0K8wZgzjk+5NEMosW9NPj+WWSUoJ/pM2FMtoo0zzjdcqo1hdgmx3rdRUer1zQ/h1yTwlZcExjoTcq5JKH1WQ5lNAmEs3vdvaYbw8FMvnvrMcwkUls+NYRIJfx1LAJYALAFYArAEYAnAEoAlAEs4N+0FM5qHfmdSargAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NCheckState.Target>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </uix:NCheckState>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'Button  Close'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
-                        <ui:Click.CursorPosition>
-                          <ui:CursorPosition Position="Center">
-                            <ui:CursorPosition.OffsetX>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetX>
-                            <ui:CursorPosition.OffsetY>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:CursorPosition.OffsetY>
-                          </ui:CursorPosition>
-                        </ui:Click.CursorPosition>
-                        <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f0c614f2-1925-441d-ad29-f9845d9fdb0d" InformativeScreenshot="4c4006334e8af6efd39e9e5772039659" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIAppFrameHelper' name='Close' /&gt;">
-                            <ui:Target.TimeoutMS>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:Target.TimeoutMS>
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:Click.Target>
-                      </ui:Click>
-                    </Sequence>
-                  </ActivityAction>
-                </ueab:ExcelApplicationCard.Body>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ueab:ExcelApplicationCard>
-            </ueab:SequenceX>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelApplicationCard>
+                  </ueab:SequenceX>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
           </Sequence>
           <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="641,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[String.Format(&quot;Ended Component {0}&quot;, strComponentName)]" />
         </Sequence>
