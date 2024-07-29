@@ -1,17 +1,18 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Excel_BankHolidaysList" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mg="clr-namespace:Microsoft.Graph;assembly=Microsoft.Graph" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uma="clr-namespace:UiPath.MicrosoftOffice365.Activities;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umae="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umaf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Excel_BankHolidaysList" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mg="clr-namespace:Microsoft.Graph;assembly=Microsoft.Graph" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uma="clr-namespace:UiPath.MicrosoftOffice365.Activities;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umae="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umaf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umafe="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_IntDefaultTimeoutM" Type="InArgument(x:Int32)" />
     <x:Property Name="out_BoolBankHoliday" Type="OutArgument(x:Boolean)" />
     <x:Property Name="in_StrSharePointAppId" Type="InArgument(x:String)" />
     <x:Property Name="in_StrSharePointTenantId" Type="InArgument(x:String)" />
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>793,2664</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1244,1261</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Component_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="54">
+    <scg:List x:TypeArguments="x:String" Capacity="108">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -64,6 +65,10 @@
       <x:String>UiPath.MicrosoftOffice365.Activities.Files</x:String>
       <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
       <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -116,15 +121,17 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
       <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: Allow security window pop message.&#xA;&#xA;Incoming argument: DefaultTimeout" DisplayName="Excel_BankHolidaysList" sap:VirtualizedContainerService.HintSize="803,2599" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description: Allow security window pop message.&#xA;&#xA;Incoming argument: DefaultTimeout" DisplayName="Excel_BankHolidaysList" sap:VirtualizedContainerService.HintSize="612,1196" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Excel_BankHolidaysList" Name="strComponentName" />
       <Variable x:TypeArguments="s:DateTime" Name="IntDateOfTheMonth" />
       <Variable x:TypeArguments="x:Boolean" Name="boolBankHolidaysFile" />
       <Variable x:TypeArguments="mg:DriveItem" Name="drBankHolidaysFile" />
       <Variable x:TypeArguments="s:Object[]" Name="objColumnDates" />
+      <Variable x:TypeArguments="x:String" Name="strUsername" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -132,7 +139,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="741,2431" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="550,1028" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -140,26 +147,29 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Excel_BankHolidaysList Component" sap:VirtualizedContainerService.HintSize="703,2203" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Excel_BankHolidaysList Component" sap:VirtualizedContainerService.HintSize="512,800" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="ss:SecureString" Name="strSecurePassword" />
+          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message - Start" sap:VirtualizedContainerService.HintSize="641,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Started Component: {0}&quot;, strComponentName)]" />
-          <Sequence sap2010:Annotation.AnnotationText="Check All Required Incoming Arguments For Initialisation and Populated" DisplayName="Incoming Argument " sap:VirtualizedContainerService.HintSize="641,1253" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <ui:LogMessage DisplayName="Log Message - Start" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Started Component: {0}&quot;, strComponentName)]" />
+          <Sequence sap2010:Annotation.AnnotationText="Check All Required Incoming Arguments For Initialisation and Populated" DisplayName="Incoming Argument " sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[in_IntDefaultTimeoutM &gt; 0]" DisplayName="If in_IntDefaultTimeoutM is Not Null or WhiteSpace" sap:VirtualizedContainerService.HintSize="579,252" sap2010:WorkflowViewState.IdRef="If_7">
+            <If Condition="[in_IntDefaultTimeoutM &gt; 0]" DisplayName="If in_IntDefaultTimeoutM is Not Null or WhiteSpace" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -170,80 +180,88 @@
                 <Throw DisplayName="Throw Incoming Argument" Exception="[New Exception(&quot;Incoming Argument Failed, in_IntDefaultTimeoutM is Null and Not Populated.&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_5" />
               </If.Else>
             </If>
-            <uma:Office365ApplicationScope ApplicationSecret="{x:Null}" CertificateAsBase64="{x:Null}" CertificatePassword="{x:Null}" ContinueOnError="{x:Null}" OAuth2Username="{x:Null}" Password="{x:Null}" SecureApplicationSecret="{x:Null}" SecurePassword="{x:Null}" Timeout="{x:Null}" Username="{x:Null}" ApplicationId="[in_StrSharePointAppId]" AuthenticationType="IntegratedWindowsAuthentication" DisplayName="Microsoft Office 365 Scope" Environment="Global" sap:VirtualizedContainerService.HintSize="579,527" sap2010:WorkflowViewState.IdRef="Office365ApplicationScope_2" OAuthApplication="UiPath" Services="Files" Tenant="[in_StrSharePointTenantId]">
-              <uma:Office365ApplicationScope.Body>
-                <ActivityAction x:TypeArguments="mg:GraphServiceClient">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="mg:GraphServiceClient" Name="ParentScope" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Check Bank Holidays File" sap:VirtualizedContainerService.HintSize="450,440" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <umaf:FindFilesAndFolders DriveMetadata="{x:Null}" Results="{x:Null}" Subfolder="{x:Null}" DisplayName="Find Files And Folders" DriveName="BOT Storage Documents" First="[drBankHolidaysFile]" sap:VirtualizedContainerService.HintSize="388,87" sap2010:WorkflowViewState.IdRef="FindFilesAndFolders_1" Query="Bank Holidays List.xlsx" SiteUrl="https://gbrserco.sharepoint.com/sites/DevOpsDigitalServices" />
-                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                    <umae:ReadColumn Cell="A2" Column="[objColumnDates]" DisplayName="Read Column" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="ReadColumn_1" SheetName="Sheet1" ValuesType="Text" Workbook="[drBankHolidaysFile]" />
-                  </Sequence>
-                </ActivityAction>
-              </uma:Office365ApplicationScope.Body>
-            </uma:Office365ApplicationScope>
-            <If Condition="[Not IsNothing(drBankHolidaysFile)]" DisplayName="If in_StrBankHolidayListFile is Not Null or WhiteSpace" sap:VirtualizedContainerService.HintSize="579,252" sap2010:WorkflowViewState.IdRef="If_14">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <If.Then>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Incoming Argument Successful, Bank Holiday File Does Exist.&quot;]" />
-              </If.Then>
-              <If.Else>
-                <Throw DisplayName="Throw Incoming Argument" Exception="[New Exception(&quot;Incoming Argument Failed, Bank Holiday File Does Not Exit.&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_6" />
-              </If.Else>
-            </If>
           </Sequence>
-          <Sequence sap2010:Annotation.AnnotationText="Perform The Necessary Functionality" DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="641,535" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;DevOps_FileSharePoint&quot;).ToString]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_Config(&quot;OrchestratorFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="450,181" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strSecurePassword]" Username="[strUsername]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_7">
-              <Assign.To>
-                <OutArgument x:TypeArguments="s:DateTime">[IntDateOfTheMonth]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="s:DateTime">[Now.Date]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <If Condition="[objColumnDates.Contains(IntDateOfTheMonth.ToString(&quot;dd/MM/yyyy&quot;))]" sap:VirtualizedContainerService.HintSize="484,271" sap2010:WorkflowViewState.IdRef="If_13">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <If.Then>
-                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[out_BoolBankHoliday]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                  </Assign.Value>
-                </Assign>
-              </If.Then>
-            </If>
-          </Sequence>
-          <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="641,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[String.Format(&quot;Ended Component {0}&quot;, strComponentName)]" />
+          </ui:GetRobotCredential>
+          <uma:Office365ApplicationScope Account="{x:Null}" ApplicationSecret="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemFullPath="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" BrowserRuntimeItemFriendlyName="{x:Null}" BrowserRuntimeItemFullPath="{x:Null}" BrowserRuntimeItemId="{x:Null}" BrowserRuntimeParentItemId="{x:Null}" CertificateAsBase64="{x:Null}" CertificatePassword="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" EmailAddress="{x:Null}" ImpersonatedUserEmailAddress="{x:Null}" ManualRuntimeItemFullPath="{x:Null}" Password="{x:Null}" SecurePassword="{x:Null}" Timeout="{x:Null}" Username="{x:Null}" ApplicationId="[strUsername]" AuthenticationType="ApplicationIdAndSecret" ConfigLocation="PropertiesPanel" DisplayName="Microsoft Office 365 Scope" Environment="Global" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="Office365ApplicationScope_2" OAuthApplication="UiPath" RuntimeItemInputMode="Browse" SecureApplicationSecret="[strSecurePassword]" Services="Files" TenantId="[in_StrSharePointTenantId]" UseConnectionService="False">
+            <uma:Office365ApplicationScope.AuthenticationScopes>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="6">
+                <InArgument x:TypeArguments="x:String">files.read</InArgument>
+                <InArgument x:TypeArguments="x:String">files.read.all</InArgument>
+                <InArgument x:TypeArguments="x:String">files.readwrite</InArgument>
+                <InArgument x:TypeArguments="x:String">files.readWrite.all</InArgument>
+                <InArgument x:TypeArguments="x:String">sites.read.all</InArgument>
+                <InArgument x:TypeArguments="x:String">sites.readwrite.all</InArgument>
+              </scg:List>
+            </uma:Office365ApplicationScope.AuthenticationScopes>
+            <uma:Office365ApplicationScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ParentScope" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Check Bank Holidays File" sap:VirtualizedContainerService.HintSize="641,873" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <umaf:FindFilesAndFolders ContinueOnError="{x:Null}" DriveMetadata="{x:Null}" Results="{x:Null}" AuthScopesInvalid="False" DisplayName="Find Files And Folders" DriveName="BOT Storage Documents" First="[drBankHolidaysFile]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="FindFilesAndFolders_2" Query="[in_Config(&quot;BankHoliday_FileName&quot;).ToString]" SiteUrl="[in_Config(&quot;DevOpsSharePoint&quot;).ToString]" Subfolder="[in_Config(&quot;BankHoliday_SubFolder&quot;).ToString]" />
+                  <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="579,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <umae:ReadColumn ContinueOnError="{x:Null}" AuthScopesInvalid="False" Cell="A2" Column="[objColumnDates]" DisplayName="Read Column" sap:VirtualizedContainerService.HintSize="579,137" sap2010:WorkflowViewState.IdRef="ReadColumn_1" SheetName="Sheet1" ValuesType="Text" Workbook="[drBankHolidaysFile]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="579,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="s:DateTime">[IntDateOfTheMonth]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="s:DateTime">[Now.Date]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <If Condition="[objColumnDates.Contains(IntDateOfTheMonth.ToString(&quot;dd/MM/yyyy&quot;))]" sap:VirtualizedContainerService.HintSize="579,271" sap2010:WorkflowViewState.IdRef="If_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[out_BoolBankHoliday]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </If.Then>
+                  </If>
+                </Sequence>
+              </ActivityAction>
+            </uma:Office365ApplicationScope.Body>
+            <uma:Office365ApplicationScope.RuntimeItemFullPathBackup>
+              <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" StoredValue="{x:Null}">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="umafe:EDriveItemMode, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uma:Office365ApplicationScope.RuntimeItemFullPathBackup>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uma:Office365ApplicationScope>
+          <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[String.Format(&quot;Ended Component {0}&quot;, strComponentName)]" />
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="707,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="516,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>

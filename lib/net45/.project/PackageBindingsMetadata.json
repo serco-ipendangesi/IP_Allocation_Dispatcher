@@ -503,35 +503,6 @@
           }
         }
       }
-    ],
-    "UiPath.MicrosoftOffice365.Activities.Files.UseDriveCard": [
-      {
-        "Type": "Connection",
-        "Key": {
-          "Value": "BindingsKey",
-          "ValueSource": "Property"
-        },
-        "Values": {
-          "ConnectionId": {
-            "Value": "ConnectionId",
-            "ValueSource": "Property"
-          }
-        },
-        "Arguments": {
-          "UseConnectionService": {
-            "Value": "UseConnectionService",
-            "ValueSource": "Property"
-          },
-          "Connector": {
-            "Value": "Connector",
-            "ValueSource": "Property"
-          },
-          "BindingsVersion": {
-            "Value": "BindingsVersion",
-            "ValueSource": "Property"
-          }
-        }
-      }
     ]
   }
 }
