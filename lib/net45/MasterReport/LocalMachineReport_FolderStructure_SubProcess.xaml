@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1243,839</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1244,2299</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Component_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="68">
@@ -87,7 +87,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: To create a folder structure for every process." DisplayName="LocalMachineReport_FolderStructure_SubProcess" sap:VirtualizedContainerService.HintSize="480,694" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description: To create a folder structure for every process." DisplayName="LocalMachineReport_FolderStructure_SubProcess" sap:VirtualizedContainerService.HintSize="1194,2234" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="LocalMachineReport_FolderStructure_SubProcess" Name="strSubProcessName" />
       <Variable x:TypeArguments="x:String" Name="strDay" />
@@ -98,8 +98,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Start" sap:VirtualizedContainerService.HintSize="438,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Started Sub-Process: {0}&quot;, strSubProcessName)]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,309" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message - Start" sap:VirtualizedContainerService.HintSize="1132,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Started Sub-Process: {0}&quot;, strSubProcessName)]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1132,1828" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -107,7 +107,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Flowchart DisplayName="LocalMachineReport_FolderStructure_SubProcess Flowchart" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+        <Flowchart DisplayName="LocalMachineReport_FolderStructure_SubProcess Flowchart" sap:VirtualizedContainerService.HintSize="1094,1578" sap2010:WorkflowViewState.IdRef="Flowchart_1">
           <Flowchart.Variables>
             <Variable x:TypeArguments="x:String" Name="strYear" />
             <Variable x:TypeArguments="x:String" Name="strMonth" />
@@ -116,13 +116,13 @@
           </Flowchart.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              <av:Point x:Key="ShapeLocation">610,2.5</av:Point>
+              <av:Point x:Key="ShapeLocation">690,2.5</av:Point>
               <av:Size x:Key="ShapeSize">60,75</av:Size>
-              <x:Double x:Key="Width">880</x:Double>
-              <x:Double x:Key="Height">1310</x:Double>
-              <av:PointCollection x:Key="ConnectorLocation">640,77.5 640,107.5 639.895,107.5 639.895,130</av:PointCollection>
+              <x:Double x:Key="Width">1060</x:Double>
+              <x:Double x:Key="Height">1541</x:Double>
+              <av:PointCollection x:Key="ConnectorLocation">720,77.5 720,107.5 725.895,107.5 725.895,130</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Flowchart.StartNode>
@@ -132,22 +132,22 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <av:Point x:Key="ShapeLocation">605,226.5</av:Point>
+                <av:Point x:Key="ShapeLocation">675,266.5</av:Point>
                 <av:Size x:Key="ShapeSize">70,87</av:Size>
-                <av:PointCollection x:Key="TrueConnector">605,270 480,270 480,340</av:PointCollection>
-                <av:PointCollection x:Key="FalseConnector">675,270 780,270 780,344.5</av:PointCollection>
+                <av:PointCollection x:Key="TrueConnector">675,310 566,310 566,380</av:PointCollection>
+                <av:PointCollection x:Key="FalseConnector">745,310 960,310 960,394.5</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <FlowDecision.True>
               <FlowStep x:Name="__ReferenceID4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">349,340</av:Point>
-                    <av:Size x:Key="ShapeSize">262,60</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">480,400 480,430</av:PointCollection>
+                    <av:Point x:Key="ShapeLocation">349,380</av:Point>
+                    <av:Size x:Key="ShapeSize">434,82</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">566,462 566,490</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign DisplayName="Create Folder Year" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign DisplayName="Create Folder Year" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[strYear]</OutArgument>
                   </Assign.To>
@@ -164,12 +164,12 @@
                   <FlowStep x:Name="__ReferenceID5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">349,430</av:Point>
-                        <av:Size x:Key="ShapeSize">262,60</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">480,490 480,520</av:PointCollection>
+                        <av:Point x:Key="ShapeLocation">349,490</av:Point>
+                        <av:Size x:Key="ShapeSize">434,82</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">566,572 566,610</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Create Folder Month" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign DisplayName="Create Folder Month" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strMonth]</OutArgument>
                       </Assign.To>
@@ -186,12 +186,12 @@
                       <FlowStep x:Name="__ReferenceID12">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">349,520</av:Point>
-                            <av:Size x:Key="ShapeSize">262,60</av:Size>
-                            <av:PointCollection x:Key="ConnectorLocation">480,580 480,616.5</av:PointCollection>
+                            <av:Point x:Key="ShapeLocation">349,610</av:Point>
+                            <av:Size x:Key="ShapeSize">434,82</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">566,692 566,722 560,722 560,756.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Create Day" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+                        <Assign DisplayName="Create Day" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_24">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[strDay]</OutArgument>
                           </Assign.To>
@@ -209,10 +209,10 @@
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <av:Point x:Key="ShapeLocation">445,616.5</av:Point>
+                                <av:Point x:Key="ShapeLocation">525,756.5</av:Point>
                                 <av:Size x:Key="ShapeSize">70,87</av:Size>
-                                <av:PointCollection x:Key="FalseConnector">515,660 630,660 630,724.5</av:PointCollection>
-                                <av:PointCollection x:Key="TrueConnector">445,660 352.5,660 352.5,786.5</av:PointCollection>
+                                <av:PointCollection x:Key="FalseConnector">595,800 630,800 630,884.5</av:PointCollection>
+                                <av:PointCollection x:Key="TrueConnector">525,800 352.5,800 352.5,956.5</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <FlowDecision.True>
@@ -220,10 +220,10 @@
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <av:Point x:Key="ShapeLocation">335,786.5</av:Point>
+                                    <av:Point x:Key="ShapeLocation">335,956.5</av:Point>
                                     <av:Size x:Key="ShapeSize">70,87</av:Size>
-                                    <av:PointCollection x:Key="TrueConnector">335,830 260,830 260,956.5</av:PointCollection>
-                                    <av:PointCollection x:Key="FalseConnector">405,830 510,830 510,894.5</av:PointCollection>
+                                    <av:PointCollection x:Key="TrueConnector">335,1000 230,1000 230,1146.5</av:PointCollection>
+                                    <av:PointCollection x:Key="FalseConnector">405,1000 510,1000 510,1064.5</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <FlowDecision.True>
@@ -231,10 +231,10 @@
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <av:Point x:Key="ShapeLocation">225,956.5</av:Point>
+                                        <av:Point x:Key="ShapeLocation">195,1146.5</av:Point>
                                         <av:Size x:Key="ShapeSize">70,87</av:Size>
-                                        <av:PointCollection x:Key="FalseConnector">295,1000 450,1000 450,1034.5</av:PointCollection>
-                                        <av:PointCollection x:Key="TrueConnector">225,1000 140,1000 140,1086.5</av:PointCollection>
+                                        <av:PointCollection x:Key="FalseConnector">265,1190 430,1190 430,1244</av:PointCollection>
+                                        <av:PointCollection x:Key="TrueConnector">195,1190 130,1190 130,1306.5</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <FlowDecision.True>
@@ -242,21 +242,21 @@
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <av:Point x:Key="ShapeLocation">105,1086.5</av:Point>
+                                            <av:Point x:Key="ShapeLocation">95,1306.5</av:Point>
                                             <av:Size x:Key="ShapeSize">70,87</av:Size>
-                                            <av:PointCollection x:Key="FalseConnector">175,1130 390,1130 390,1174.5</av:PointCollection>
-                                            <av:PointCollection x:Key="TrueConnector">105,1130 0,1130 0,1280 19,1280</av:PointCollection>
+                                            <av:PointCollection x:Key="FalseConnector">165,1350 370,1350 370,1384</av:PointCollection>
+                                            <av:PointCollection x:Key="TrueConnector">95,1350 0,1350 0,1500 13,1500</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <FlowDecision.True>
                                           <FlowStep x:Name="__ReferenceID0">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <av:Point x:Key="ShapeLocation">19,1250</av:Point>
-                                                <av:Size x:Key="ShapeSize">262,60</av:Size>
+                                                <av:Point x:Key="ShapeLocation">13,1459</av:Point>
+                                                <av:Size x:Key="ShapeSize">434,82</av:Size>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <Assign DisplayName="Create Report Output File Path" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                            <Assign DisplayName="Create Report Output File Path" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:String">[out_StrInvoiceOutputPath]</OutArgument>
                                               </Assign.To>
@@ -275,12 +275,12 @@
                                           <FlowStep x:Name="__ReferenceID13">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <av:Point x:Key="ShapeLocation">290,1174.5</av:Point>
-                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
-                                                <av:PointCollection x:Key="ConnectorLocation">390,1225.5 390,1280 281,1280</av:PointCollection>
+                                                <av:Point x:Key="ShapeLocation">270,1384</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                <av:PointCollection x:Key="ConnectorLocation">470,1410 500,1410 500,1500 447,1500</av:PointCollection>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Time" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CreateDirectory_5" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear+&quot;\&quot;+strMonth+&quot;\&quot;+strDay+&quot;\&quot;+Now.ToString(&quot;HHmmss&quot;)]">
+                                            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Time" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="CreateDirectory_5" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear+&quot;\&quot;+strMonth+&quot;\&quot;+strDay+&quot;\&quot;+Now.ToString(&quot;HHmmss&quot;)]">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -298,12 +298,12 @@
                                       <FlowStep x:Name="__ReferenceID11">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <av:Point x:Key="ShapeLocation">350,1034.5</av:Point>
-                                            <av:Size x:Key="ShapeSize">200,51</av:Size>
-                                            <av:PointCollection x:Key="ConnectorLocation">350,1060 140,1060 140,1086.5</av:PointCollection>
+                                            <av:Point x:Key="ShapeLocation">330,1244</av:Point>
+                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                            <av:PointCollection x:Key="ConnectorLocation">330,1270 130,1270 130,1306.5</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Date" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear+&quot;\&quot;+strMonth+&quot;\&quot;+strDay]">
+                                        <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Date" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear+&quot;\&quot;+strMonth+&quot;\&quot;+strDay]">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -321,12 +321,12 @@
                                   <FlowStep x:Name="__ReferenceID9">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <av:Point x:Key="ShapeLocation">410,894.5</av:Point>
-                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
-                                        <av:PointCollection x:Key="ConnectorLocation">410,920 260,920 260,956.5</av:PointCollection>
+                                        <av:Point x:Key="ShapeLocation">410,1064.5</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">410,1090.5 230,1090.5 230,1146.5</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Month" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear+&quot;\&quot;+strMonth]">
+                                    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Month" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear+&quot;\&quot;+strMonth]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -344,12 +344,12 @@
                               <FlowStep x:Name="__ReferenceID8">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <av:Point x:Key="ShapeLocation">530,724.5</av:Point>
-                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
-                                    <av:PointCollection x:Key="ConnectorLocation">530,750 387.5,750 387.5,786.5</av:PointCollection>
+                                    <av:Point x:Key="ShapeLocation">530,884.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">530,910.5 387.5,910.5 387.5,956.5</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Year" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear]">
+                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Year" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;+strYear]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -373,12 +373,12 @@
               <FlowStep x:Name="__ReferenceID6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">680,344.5</av:Point>
-                    <av:Size x:Key="ShapeSize">200,51</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">680,370 611,370</av:PointCollection>
+                    <av:Point x:Key="ShapeLocation">860,394.5</av:Point>
+                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">860,420.5 830,420.5 830,421 783,421</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Logs" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;]">
+                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Logs" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_StrInvoiceOutputPath+&quot;Logs\&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -403,11 +403,11 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:Point x:Key="ShapeLocation">508.895,130</av:Point>
-                <av:Size x:Key="ShapeSize">262,60</av:Size>
-                <av:PointCollection x:Key="ConnectorLocation">639.895,190 639.895,220 640,220 640,226.5</av:PointCollection>
+                <av:Size x:Key="ShapeSize">434,82</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">725.895,212 725.895,242 727.5,242 727.5,266.5</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Invoice File Location" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_23">
+            <Assign DisplayName="Invoice File Location" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_23">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[in_StrInvoiceOutputPath]</OutArgument>
               </Assign.To>
@@ -432,7 +432,7 @@
         </Flowchart>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1098,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -446,7 +446,7 @@
             <Throw DisplayName="Throw - Exception" Exception="[New Exception(String.Format(&quot;{0} | {1}&quot;, StrSubProcessName, Exception.Message))]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1098,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -462,6 +462,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="438,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Ended Sub-Process: {0}&quot;, strSubProcessName)]" />
+    <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="1132,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Ended Sub-Process: {0}&quot;, strSubProcessName)]" />
   </Sequence>
 </Activity>
