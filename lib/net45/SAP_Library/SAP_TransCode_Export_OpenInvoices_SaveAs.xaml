@@ -250,7 +250,7 @@
                   <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="434,334" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
                     <ui:RetryScope.ActivityBody>
                       <ActivityAction>
-                        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_DOUBLE" DisplayName="Click - Browse" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_DOUBLE" DisplayName="Click - Browse" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -291,7 +291,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:RetryScope>
-                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
                   <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_StrDumpReportLocation]</OutArgument>
@@ -309,7 +309,7 @@
                       </ui:Target>
                     </ui:TypeInto.Target>
                   </ui:TypeInto>
-                  <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_4" />
                   <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Excel" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="1835ad32-4744-4cd0-a20e-45ff6a85f745" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
