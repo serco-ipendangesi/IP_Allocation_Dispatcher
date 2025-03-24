@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>907,4957</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1243,4767</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Component_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -107,7 +107,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description:&#xA;&#xA;Incoming argument: Date and Timeout Delay" DisplayName="SAP_TransCode_ProcessDirector_EnterDetails" sap:VirtualizedContainerService.HintSize="917,4892" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description:&#xA;&#xA;Incoming argument: Date and Timeout Delay" DisplayName="SAP_TransCode_ProcessDirector_EnterDetails" sap:VirtualizedContainerService.HintSize="895,4702" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="SAP_TransCode_ProcessDirector_EnterDetails" Name="strComponentName" />
       <Variable x:TypeArguments="x:Boolean" Name="boolProcessDirectorByReadSoftTableRows" />
@@ -121,7 +121,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="855,4724" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="847,4548" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -129,22 +129,22 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SAP_TransCode_ProcessDirector_EnterDetails Component" sap:VirtualizedContainerService.HintSize="817,4496" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="SAP_TransCode_ProcessDirector_EnterDetails Component" sap:VirtualizedContainerService.HintSize="809,4320" sap2010:WorkflowViewState.IdRef="Sequence_14">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message - Start" sap:VirtualizedContainerService.HintSize="755,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[String.Format(&quot;Started Component: {0}&quot;, strComponentName)]" />
-          <Sequence sap2010:Annotation.AnnotationText="Check All Required Incoming Arguments For Initialisation and Populated" DisplayName="Incoming Argument " sap:VirtualizedContainerService.HintSize="755,686" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <ui:LogMessage DisplayName="Log Message - Start" sap:VirtualizedContainerService.HintSize="761,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[String.Format(&quot;Started Component: {0}&quot;, strComponentName)]" />
+          <Sequence sap2010:Annotation.AnnotationText="Check All Required Incoming Arguments For Initialisation and Populated" DisplayName="Incoming Argument " sap:VirtualizedContainerService.HintSize="761,662" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[in_IntDefaultTimeoutM &gt; 0]" DisplayName="If in_IntDefaultTimeoutM is Not Null or WhiteSpace" sap:VirtualizedContainerService.HintSize="579,252" sap2010:WorkflowViewState.IdRef="If_6">
+            <If Condition="[in_IntDefaultTimeoutM &gt; 0]" DisplayName="If in_IntDefaultTimeoutM is Not Null or WhiteSpace" sap:VirtualizedContainerService.HintSize="579,251" sap2010:WorkflowViewState.IdRef="If_6">
               <If.Then>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Trace" Message="[&quot;Incoming Argument Successful, in_IntDefaultTimeoutM is Not Null and Populated.&quot;]" />
               </If.Then>
@@ -152,7 +152,7 @@
                 <Throw DisplayName="Throw Incoming Argument" Exception="[New Exception(&quot;Incoming Argument Failed, in_IntDefaultTimeoutM is Null and Not Populated.&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_8" />
               </If.Else>
             </If>
-            <If Condition="[(Not(String.IsNullOrWhiteSpace(in_StrDate)))]" DisplayName="If in_StrDate is Not Null and Populated" sap:VirtualizedContainerService.HintSize="579,252" sap2010:WorkflowViewState.IdRef="If_7">
+            <If Condition="[(Not(String.IsNullOrWhiteSpace(in_StrDate)))]" DisplayName="If in_StrDate is Not Null and Populated" sap:VirtualizedContainerService.HintSize="579,251" sap2010:WorkflowViewState.IdRef="If_7">
               <If.Then>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Trace" Message="[&quot;Incoming Argument Successful,in_StrDate is Not Null and Populated.&quot;]" />
               </If.Then>
@@ -161,23 +161,23 @@
               </If.Else>
             </If>
           </Sequence>
-          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Pre-Condition" sap:VirtualizedContainerService.HintSize="755,521" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Pre-Condition" sap:VirtualizedContainerService.HintSize="761,498" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:UiElementExists DisplayName="Element Exists - Process Director by ReadSoft" Exists="[boolProcessDirectorScreen]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+            <ui:UiElementExists ContinueOnError="{x:Null}" DisplayName="Element Exists - Process Director by ReadSoft" Exists="[boolProcessDirectorScreen]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_5" Result="{x:Null}">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft*' /&gt;&lt;sap id='usr' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Process Director*' /&gt;&lt;sap id='titl' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[boolProcessDirectorScreen]" DisplayName="If Post-Condition Successful" sap:VirtualizedContainerService.HintSize="579,252" sap2010:WorkflowViewState.IdRef="If_8">
+            <If Condition="[boolProcessDirectorScreen]" DisplayName="If Post-Condition Successful" sap:VirtualizedContainerService.HintSize="579,251" sap2010:WorkflowViewState.IdRef="If_8">
               <If.Then>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Pre-Condition Successful, Process Director ReadSoft Screen Is Visible.&quot;]" />
               </If.Then>
@@ -186,13 +186,13 @@
               </If.Else>
             </If>
           </Sequence>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="Attach Window - Tcode" sap:VirtualizedContainerService.HintSize="755,1574" sap2010:WorkflowViewState.IdRef="WindowScope_1" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
+          <ui:WindowScope ApplicationWindow="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Attach Window - Tcode" sap:VirtualizedContainerService.HintSize="761,1476" sap2010:WorkflowViewState.IdRef="WindowScope_1" SearchScope="{x:Null}" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Process Director*' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" Window="{x:Null}">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence sap2010:Annotation.AnnotationText="Perform The Necessary Functionality" DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="496,1465" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <Sequence sap2010:Annotation.AnnotationText="Perform The Necessary Functionality" DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="482,1367" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -200,7 +200,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                  <ui:MaximizeWindow ContinueOnError="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" Window="{x:Null}" />
                   <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_2" />
                   <If Condition="[Not(Now.DayOfWeek.tostring.Equals(&quot;Thursday&quot;) or Now.DayOfWeek.tostring.Equals(&quot;Friday&quot;))]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_12">
                     <sap:WorkflowViewStateService.ViewState>
@@ -210,7 +210,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[IntPreviousDays]</OutArgument>
                         </Assign.To>
@@ -220,7 +220,7 @@
                       </Assign>
                     </If.Then>
                     <If.Else>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[IntPreviousDays]</OutArgument>
                         </Assign.To>
@@ -230,7 +230,7 @@
                       </Assign>
                     </If.Else>
                   </If>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_8">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[in_StrDate]</OutArgument>
                     </Assign.To>
@@ -238,9 +238,9 @@
                       <InArgument x:TypeArguments="x:String">[Now.AddDays(-IntPreviousDays).ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="Type Into - Transferral Date" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_StrDate]">
+                  <ui:TypeInto Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into - Transferral Date" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Text="[in_StrDate]">
                     <ui:TypeInto.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;wnd app='saplogon.exe' cls='*' title='PROCESS DIRECTOR by ReadSoft' /&gt;&lt;sap id='usr/ctxtSEL_SDAT-LOW' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;sap id='usr/ctxtSEL_SDAT-LOW' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
                     </ui:TypeInto.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -249,9 +249,9 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:TypeInto>
-                  <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="Type Into - To" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[Now.ToString(&quot;dd.MM.yyyy&quot;)]">
+                  <ui:TypeInto Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into - To" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Text="[Now.ToString(&quot;dd.MM.yyyy&quot;)]">
                     <ui:TypeInto.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;wnd app='saplogon.exe' cls='*' title='PROCESS DIRECTOR by ReadSoft' /&gt;&lt;sap id='usr/ctxtSEL_SDAT-HIGH' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;sap id='usr/ctxtSEL_SDAT-HIGH' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
                     </ui:TypeInto.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -260,15 +260,10 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:TypeInto>
-                  <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="Type Into - Minimum number of hits" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_3">
+                  <ui:TypeInto Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into - Minimum number of hits" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Text="[Nothing]">
                     <ui:TypeInto.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;wnd app='saplogon.exe' cls='*' title='PROCESS DIRECTOR by ReadSoft' /&gt;&lt;sap id='usr/txtP_SELMAX' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;sap id='usr/txtP_SELMAX' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
                     </ui:TypeInto.Target>
-                    <ui:TypeInto.Text>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String" Value="" />
-                      </InArgument>
-                    </ui:TypeInto.Text>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -276,7 +271,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:TypeInto>
-                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click - Rejected" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click AlterIfDisabled="True" ClickType="CLICK_SINGLE" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Click - Rejected" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" UnblockInput="{x:Null}">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -288,12 +283,12 @@
                       </ui:CursorPosition>
                     </ui:Click.CursorPosition>
                     <ui:Click.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft' /&gt;&lt;sap id='usr/chkP_REFUSE' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;sap id='usr/chkP_REFUSE' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
                     </ui:Click.Target>
                   </ui:Click>
-                  <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="Type Into - Layout of header list" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[in_StrLayoutName]">
+                  <ui:TypeInto Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into - Layout of header list" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Text="[in_StrLayoutName]">
                     <ui:TypeInto.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft' /&gt;&lt;sap id='usr/ctxtP_VAR_H' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18712de4-0c0d-47ea-9819-d2874858faec" Selector="&lt;sap id='usr/ctxtP_VAR_H' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
                     </ui:TypeInto.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -303,7 +298,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:TypeInto>
                   <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click - Execute" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click AlterIfDisabled="True" ClickType="CLICK_SINGLE" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Click - Execute" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="{x:Null}" SimulateClick="True" UnblockInput="{x:Null}">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -315,7 +310,7 @@
                       </ui:CursorPosition>
                     </ui:Click.CursorPosition>
                     <ui:Click.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft' /&gt;&lt;sap id='tbar[1]/btn[8]' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;sap id='tbar[1]/btn[8]' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
                     </ui:Click.Target>
                   </ui:Click>
                 </Sequence>
@@ -328,7 +323,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:WindowScope>
-          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Post-Condition" sap:VirtualizedContainerService.HintSize="755,521" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Post-Condition" sap:VirtualizedContainerService.HintSize="761,498" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -336,16 +331,16 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:UiElementExists DisplayName="Element Exists - Process Director by ReadSoft DataTable Screen" Exists="[boolProcessDirectorByReadSoftTableRows]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+            <ui:UiElementExists ContinueOnError="{x:Null}" DisplayName="Element Exists - Process Director by ReadSoft DataTable Screen" Exists="[boolProcessDirectorByReadSoftTableRows]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_4" Result="{x:Null}">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft*' /&gt;&lt;sap id='titl' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Process Director*' /&gt;&lt;sap id='titl' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[boolProcessDirectorByReadSoftTableRows]" DisplayName="If Post-Condition Successful" sap:VirtualizedContainerService.HintSize="579,252" sap2010:WorkflowViewState.IdRef="If_9">
+            <If Condition="[boolProcessDirectorByReadSoftTableRows]" DisplayName="If Post-Condition Successful" sap:VirtualizedContainerService.HintSize="579,251" sap2010:WorkflowViewState.IdRef="If_9">
               <If.Then>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Trace" Message="[&quot;Post-Condition Successful, Process Director ReadSoft DataTable Screen Is Visible.&quot;]" />
               </If.Then>
@@ -354,24 +349,24 @@
               </If.Else>
             </If>
           </Sequence>
-          <Sequence sap2010:Annotation.AnnotationText="Check All Required Outgoing Arguments For Initialisation and Populated" DisplayName="Outgoing Argument" sap:VirtualizedContainerService.HintSize="755,660" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence sap2010:Annotation.AnnotationText="Check All Required Outgoing Arguments For Initialisation and Populated" DisplayName="Outgoing Argument" sap:VirtualizedContainerService.HintSize="761,716" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text - Total Rows" sap:VirtualizedContainerService.HintSize="713,148" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+            <ui:GetOCRText ContinueOnError="{x:Null}" DisplayName="Get OCR Text - Total Rows" sap:VirtualizedContainerService.HintSize="713,192" sap2010:WorkflowViewState.IdRef="GetOCRText_1" WordsInfo="{x:Null}">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" />
+                  <ui:GoogleOCR FilterRegion="{x:Null}" AllowedCharacters="{x:Null}" ComputeSkewAngle="False" DeniedCharacters="{x:Null}" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Result="{x:Null}" Scale="{x:Null}" Text="{x:Null}" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ae3c8b78-8d43-464d-bcbe-0478b2e40527" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft*' /&gt;&lt;sap id='titl' text='PROCESS DIRECTOR by ReadSoft*' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ae3c8b78-8d43-464d-bcbe-0478b2e40527" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Process Director*' /&gt;&lt;sap id='titl' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
@@ -387,7 +382,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetOCRText>
-            <Assign sap:VirtualizedContainerService.HintSize="713,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign sap:VirtualizedContainerService.HintSize="713,81" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">[out_ArrStrTotalRows]</OutArgument>
               </Assign.To>
@@ -395,20 +390,20 @@
                 <InArgument x:TypeArguments="s:String[]">[strTotalRows.Split({"(",")"},StringSplitOptions.None)]</InArgument>
               </Assign.Value>
             </Assign>
-            <If Condition="[Not(String.IsNullOrWhiteSpace(out_ArrStrTotalRows(1).ToString))]" DisplayName="If out_ArrStrTotalRows Is Not Null and Populated " sap:VirtualizedContainerService.HintSize="713,249" sap2010:WorkflowViewState.IdRef="If_11">
+            <If Condition="[Not(String.IsNullOrWhiteSpace(out_ArrStrTotalRows(1).ToString))]" DisplayName="If out_ArrStrTotalRows Is Not Null and Populated " sap:VirtualizedContainerService.HintSize="713,251" sap2010:WorkflowViewState.IdRef="If_11">
               <If.Then>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Trace" Message="[&quot;Outgoing Argument Successful, out_ArrStrTotalRows is Not Null and Populated.&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Trace" Message="[&quot;Outgoing Argument Successful, out_ArrStrTotalRows is Not Null and Populated.&quot;]" />
               </If.Then>
               <If.Else>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Trace" Message="[&quot;Outgoing Argument Failed, out_ArrStrTotalRows is Null and Not Populated.&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Trace" Message="[&quot;Outgoing Argument Failed, out_ArrStrTotalRows is Null and Not Populated.&quot;]" />
               </If.Else>
             </If>
           </Sequence>
-          <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="755,91" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[String.Format(&quot;Ended Component {0}&quot;, strComponentName)]" />
+          <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="761,92" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[String.Format(&quot;Ended Component {0}&quot;, strComponentName)]" />
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="801,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="813,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -419,7 +414,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Throw DisplayName="Throw - Exception" Exception="[New Exception(String.Format(&quot;{0} | {1}&quot;, strComponentName, Exception.Message))]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_12" />
+            <Throw DisplayName="Throw - Exception" Exception="[New Exception(String.Format(&quot;{0} | {1}&quot;, strComponentName, Exception.Message))]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_12" />
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>

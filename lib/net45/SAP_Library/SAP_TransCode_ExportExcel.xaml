@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1244,4793</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1243,4560</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Component_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -106,7 +106,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: Choose file format.&#xA;&#xA;Incoming argument: Default Timeout and File Type" DisplayName="SAP_TransCode_ExportExcel" sap:VirtualizedContainerService.HintSize="806,4728" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description: Choose file format.&#xA;&#xA;Incoming argument: Default Timeout and File Type" DisplayName="SAP_TransCode_ExportExcel" sap:VirtualizedContainerService.HintSize="792,4495" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="SAP_TransCode_ExportExcel" Name="strComponentName" />
       <Variable x:TypeArguments="x:Boolean" Name="boolProcessDirectorScreen" />
@@ -119,7 +119,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="744,4560" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="744,4341" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -127,7 +127,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SAP_TransCode_ExportExcel Component" sap:VirtualizedContainerService.HintSize="706,4332" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="SAP_TransCode_ExportExcel Component" sap:VirtualizedContainerService.HintSize="692,4113" sap2010:WorkflowViewState.IdRef="Sequence_14">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -135,7 +135,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:LogMessage DisplayName="Log Message - Start" sap:VirtualizedContainerService.HintSize="644,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[String.Format(&quot;Started Component: {0}&quot;, strComponentName)]" />
-          <Sequence sap2010:Annotation.AnnotationText="Check All Required Incoming Arguments For Initialisation and Populated" DisplayName="Incoming Argument " sap:VirtualizedContainerService.HintSize="644,394" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence sap2010:Annotation.AnnotationText="Check All Required Incoming Arguments For Initialisation and Populated" DisplayName="Incoming Argument " sap:VirtualizedContainerService.HintSize="644,380" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,7 +151,7 @@
               </If.Else>
             </If>
           </Sequence>
-          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Pre-Condition" sap:VirtualizedContainerService.HintSize="644,521" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Pre-Condition" sap:VirtualizedContainerService.HintSize="644,499" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,7 +160,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:UiElementExists DisplayName="Element Exists - Process Director by ReadSoft" Exists="[boolProcessDirectorScreen]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft*' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Process Director*' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
@@ -176,7 +176,7 @@
               </If.Else>
             </If>
           </Sequence>
-          <Sequence sap2010:Annotation.AnnotationText="Perform The Necessary Functionality" DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="644,2401" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence sap2010:Annotation.AnnotationText="Perform The Necessary Functionality" DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="644,2275" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,7 +196,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='PROCESS DIRECTOR by ReadSoft*' /&gt;&lt;ctrl name=' ' role='split button' idx='10' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9688677-687b-4786-a606-c6dfd58fe639" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Process Director*' /&gt;&lt;ctrl name=' ' role='split button' idx='10' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click - Spreadsheet" sap:VirtualizedContainerService.HintSize="582,87" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
