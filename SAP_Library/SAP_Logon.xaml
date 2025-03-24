@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1253,2456</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1127,2455</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Component_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -119,7 +119,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Description: Login to SAP Application&#xA;&#xA;Incoming argument: Username, Password and Client code." DisplayName="SAP_Logon" sap:VirtualizedContainerService.HintSize="761,2391" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description: Login to SAP Application&#xA;&#xA;Incoming argument: Username, Password and Client code." DisplayName="SAP_Logon" sap:VirtualizedContainerService.HintSize="761,2390" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="SAP_Logon" Name="strComponentName" />
       <Variable x:TypeArguments="x:Boolean" Name="boolSAPLogonScreen" />
@@ -132,7 +132,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="713,2237" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="713,2236" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -140,7 +140,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SAP_Logon Component" sap:VirtualizedContainerService.HintSize="675,1822" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="SAP_Logon Component" sap:VirtualizedContainerService.HintSize="675,1821" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -173,7 +173,7 @@
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:UiElementExists DisplayName="Element Exists - SAP Logon Application" Exists="[boolSAPLogonScreen]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+            <ui:UiElementExists ContinueOnError="{x:Null}" DisplayName="Element Exists - SAP Logon Application" Exists="[boolSAPLogonScreen]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_3" Result="{x:Null}">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='*' title='SAP Logon *' /&gt;&lt;wnd aaname='Log On' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
                   <ui:Target.WaitForReady>
@@ -191,7 +191,7 @@
               </If.Else>
             </If>
           </Sequence>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="Attach Window - Sap Logon" sap:VirtualizedContainerService.HintSize="627,689" sap2010:WorkflowViewState.IdRef="WindowScope_1" Selector="&lt;wnd app='saplogon.exe' cls='*' title='SAP Logon*' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]">
+          <ui:WindowScope ApplicationWindow="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Attach Window - Sap Logon" sap:VirtualizedContainerService.HintSize="627,689" sap2010:WorkflowViewState.IdRef="WindowScope_2" SearchScope="{x:Null}" Selector="&lt;wnd app='saplogon.exe' cls='*' title='SAP Logon*' /&gt;" TimeoutMS="[in_IntDefaultTimeoutM]" Window="{x:Null}">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -207,8 +207,8 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="368,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                  <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;SAP_Credentials&quot;).ToString()]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_Config(&quot;OrchestratorFolder&quot;).ToString()]" sap:VirtualizedContainerService.HintSize="368,52" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[sstrPassword]" Username="[strUsername]">
+                  <ui:MaximizeWindow ContinueOnError="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="368,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" Window="{x:Null}" />
+                  <ui:GetRobotCredential AssetName="[in_Config(&quot;SAP_Credentials&quot;).ToString()]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_Config(&quot;OrchestratorFolder&quot;).ToString()]" sap:VirtualizedContainerService.HintSize="368,52" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[sstrPassword]" TimeoutMS="{x:Null}" Username="[strUsername]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -216,7 +216,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:GetRobotCredential>
-                  <ucas:Login Password="{x:Null}" Window="{x:Null}" Client="[in_StrClientCode]" DisplayName="SAP Login" sap:VirtualizedContainerService.HintSize="368,345" sap2010:WorkflowViewState.IdRef="Login_6" IsSecure="True" Language="EN" MultiLogonOptionToChoose="Single" SecurePassword="[sstrPassword]" Timeout="20000" Username="[strUsername]">
+                  <ucas:Login Client="[in_StrClientCode]" ContinueOnError="{x:Null}" DisplayName="SAP Login" sap:VirtualizedContainerService.HintSize="368,345" sap2010:WorkflowViewState.IdRef="Login_6" IsSecure="True" Language="EN" MultiLogonOptionToChoose="Single" Password="{x:Null}" SecurePassword="[sstrPassword]" Timeout="20000" Username="[strUsername]" Window="{x:Null}">
                     <ucas:Login.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2e08182f-4bdc-493a-a732-bc85ea2b597b" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;&#xA;" TimeoutMS="[in_IntDefaultTimeoutM]">
                         <ui:Target.WaitForReady>
@@ -241,7 +241,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:WindowScope>
-          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Post-Condition" sap:VirtualizedContainerService.HintSize="627,499" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence sap2010:Annotation.AnnotationText="Validate Component Completed The Desired Functionality" DisplayName="Post-Condition" sap:VirtualizedContainerService.HintSize="627,498" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -249,7 +249,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:UiElementExists DisplayName="Element Exists - SAP Easy Access" Exists="[boolSAPEasyAccess]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+            <ui:UiElementExists ContinueOnError="{x:Null}" DisplayName="Element Exists - SAP Easy Access" Exists="[boolSAPEasyAccess]" sap:VirtualizedContainerService.HintSize="579,87" sap2010:WorkflowViewState.IdRef="UiElementExists_2" Result="{x:Null}">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a3a3775-1974-4456-9a3b-1834c26ecf57" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='*' /&gt;&lt;wnd cls='Edit' /&gt;&lt;ctrl role='editable text' /&gt;" TimeoutMS="15000">
                   <ui:Target.WaitForReady>
@@ -258,7 +258,7 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[boolSAPEasyAccess]" DisplayName="If Post-Condition Successful" sap:VirtualizedContainerService.HintSize="579,252" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[boolSAPEasyAccess]" DisplayName="If Post-Condition Successful" sap:VirtualizedContainerService.HintSize="579,251" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Post-Condition Successful, Bot Has Successfully Logged On.&quot;]" />
               </If.Then>
